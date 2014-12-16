@@ -1,4 +1,4 @@
-package main
+package main // import "hypermind.cn/talon/examples/first_demo"
 
 import (
 	"errors"
