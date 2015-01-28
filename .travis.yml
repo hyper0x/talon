@@ -12,7 +12,7 @@ before_script:
   - export TRAVIS_BUILD_DIR=$PROJECT_HOME
   - cp -R $HOME/gopath/src/github.com/hyper-carrot/talon $PROJECT_HOME
   - cd $PROJECT_HOME
-  - pwd
+  - echo $PROJECT_HOME
   - chmod +x ./test
 
 script:
