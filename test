@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+go test -v ./base
+go test -v ./logging
+go test -v ./middleware
+go test -v ./analyzer
+go test -v ./downloader
+go test -v ./itempipeline
+go test -v ./scheduler
+go test -v ./tool/cookie
