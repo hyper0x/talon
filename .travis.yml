@@ -9,9 +9,10 @@ install:
 before_script:
   - export PROJECT_HOME=$HOME/gopath/src/hypermind.cn/talon
   - mkdir -p $PROJECT_HOME
-  - export TRAVIS_BUILD_DIR=$PROJECT_HOM
+  - export TRAVIS_BUILD_DIR=$PROJECT_HOME
   - cp -R $HOME/gopath/src/github.com/hyper-carrot/talon $PROJECT_HOME
   - cd $PROJECT_HOME
+  - pwd
   - chmod +x ./test
 
 script:
