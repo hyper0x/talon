@@ -3,6 +3,11 @@ language: go
 go:
   - 1.4
 
+before_install:
+  - export PROJECT_HOME=$HOME/gopath/src/hypermind.cn/talon
+  - mv $HOME/gopath/src/github.com/hyper-carrot/talon $PROJECT_HOME
+  - cd $PROJECT_HOME
+
 install:
   - go get github.com/PuerkitoBio/goquery
 
