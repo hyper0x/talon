@@ -18,11 +18,11 @@ func TestConsoleLogger(t *testing.T) {
 		}
 	}()
 	logger := &ConsoleLogger{}
-	logger.SetDefaultInvokingNumber()
-	expectedInvokingNumber := uint(1)
-	currentInvokingNumber := logger.getInvokingNumber()
-	if currentInvokingNumber != expectedInvokingNumber {
-		t.Errorf("The current invoking number %d should be %d!", currentInvokingNumber, expectedInvokingNumber)
+	logger.SetPosition(POSITION_SINGLE)
+	expectedPosition := uint(1)
+	currentPosition := logger.GetPosition()
+	if uint(currentPosition) != uint(expectedPosition) {
+		t.Errorf("The current position %d should be %d!", currentPosition, expectedPosition)
 	}
 	testLogger(t, logger)
 }
@@ -34,7 +34,7 @@ func TestLogManager(t *testing.T) {
 			t.Errorf("Fatal Error: %s\n", err)
 		}
 	}()
-	logger := &LogManager{loggers: []Logger{&ConsoleLogger{invokingNumber: 2}}}
+	logger := &LogManager{loggers: []Logger{&ConsoleLogger{position: 2}}}
 	testLogger(t, logger)
 }
 
@@ -122,7 +122,7 @@ func testLogger(t *testing.T, logger Logger) {
 func checkContent(t *testing.T, logTag LogTag, content string, format string, logContents ...interface{}) {
 	var prefixBuffer bytes.Buffer
 	prefixBuffer.WriteString(logTag.Prefix())
-	prefixBuffer.WriteString(" go_lib/logging.testLogger : (logger_test.go:")
+	prefixBuffer.WriteString(" hypermind.cn/talon/logging.testLogger : (logger_test.go:")
 	prefix := prefixBuffer.String()
 	var suffixBuffer bytes.Buffer
 	suffixBuffer.WriteString(") - ")
