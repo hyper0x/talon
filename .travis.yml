@@ -5,6 +5,7 @@ go:
 
 install:
   - go get github.com/PuerkitoBio/goquery
+  - go get code.google.com/p/go.net/publicsuffix
 
 before_script:
   - chmod +x ./test
