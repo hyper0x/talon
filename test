@@ -4,7 +4,7 @@ export TALON_HOME=$HOME/gopath/src/hypermind.cn/talon/
 mkdir -p $TALON_HOME
 cp -R $HOME/gopath/src/github.com/hyper-carrot/talon/* $TALON_HOME
 cd  $TALON_HOME
-echo The worksapce: $TALON_HOME
+echo The workspace: $TALON_HOME
 
 go test -v ./base
 go test -v ./logging
