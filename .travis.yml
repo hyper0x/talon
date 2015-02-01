@@ -12,3 +12,6 @@ before_script:
 
 script:
   - ./test
+
+notifications:
+  slack: gophercn:at1kT18oZQMeLErRW2TjmIZh
