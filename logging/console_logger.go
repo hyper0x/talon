@@ -16,6 +16,10 @@ func (logger *ConsoleLogger) SetPosition(pos Position) {
 	logger.position = pos
 }
 
+func (logger *ConsoleLogger) Initialize() {
+
+}
+
 func (logger *ConsoleLogger) Error(v ...interface{}) string {
 	content := generateLogContent(getErrorLogTag(), logger.GetPosition(), "", v...)
 	log.Print(content)

@@ -3,16 +3,16 @@ package scheduler
 import (
 	"errors"
 	"fmt"
-	anlz "hypermind.cn/talon/analyzer"
-	base "hypermind.cn/talon/base"
-	dl "hypermind.cn/talon/downloader"
-	ipl "hypermind.cn/talon/itempipeline"
-	"hypermind.cn/talon/logging"
-	mdw "hypermind.cn/talon/middleware"
 	"net/http"
 	"strings"
 	"sync/atomic"
 	"time"
+
+	anlz "hypermind.cn/talon/analyzer"
+	base "hypermind.cn/talon/base"
+	dl "hypermind.cn/talon/downloader"
+	ipl "hypermind.cn/talon/itempipeline"
+	mdw "hypermind.cn/talon/middleware"
 )
 
 // 组件的统一代号。
@@ -24,7 +24,7 @@ const (
 )
 
 // 日志记录器。
-var logger logging.Logger = base.NewLogger()
+var logger = base.NewLogger("scheduler")
 
 // 被用来生成HTTP客户端的函数类型。
 type GenHttpClient func() *http.Client

@@ -10,6 +10,12 @@ func (logger *LogManager) GetPosition() Position {
 
 func (logger *LogManager) SetPosition(pos Position) {}
 
+func (self *LogManager) Initialize() {
+	for _, logger := range self.loggers {
+		logger.Initialize()
+	}
+}
+
 func (self *LogManager) Error(v ...interface{}) string {
 	var content string
 	for _, logger := range self.loggers {

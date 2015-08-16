@@ -3,14 +3,14 @@ package analyzer // import "hypermind.cn/talon/analyzer"
 import (
 	"errors"
 	"fmt"
-	base "hypermind.cn/talon/base"
-	"hypermind.cn/talon/logging"
-	mdw "hypermind.cn/talon/middleware"
 	"net/url"
+
+	base "hypermind.cn/talon/base"
+	mdw "hypermind.cn/talon/middleware"
 )
 
 // 日志记录器。
-var logger logging.Logger = base.NewLogger()
+var logger = base.NewLogger("analyzer")
 
 // ID生成器。
 var analyzerIdGenertor mdw.IdGenertor = mdw.NewIdGenertor()

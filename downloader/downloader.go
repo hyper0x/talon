@@ -1,14 +1,14 @@
 package downloader // import "hypermind.cn/talon/downloader"
 
 import (
-	base "hypermind.cn/talon/base"
-	"hypermind.cn/talon/logging"
-	mdw "hypermind.cn/talon/middleware"
 	"net/http"
+
+	base "hypermind.cn/talon/base"
+	mdw "hypermind.cn/talon/middleware"
 )
 
 // 日志记录器。
-var logger logging.Logger = base.NewLogger()
+var logger = base.NewLogger("downloader")
 
 // ID生成器。
 var downloaderIdGenertor mdw.IdGenertor = mdw.NewIdGenertor()

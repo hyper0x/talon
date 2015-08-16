@@ -21,6 +21,7 @@ func init() {
 type Logger interface {
 	GetPosition() Position
 	SetPosition(pos Position)
+	Initialize()
 	Error(v ...interface{}) string
 	Errorf(format string, v ...interface{}) string
 	Errorln(v ...interface{}) string

@@ -1,5 +1,10 @@
 package logging
 
+import (
+	"fmt"
+	"time"
+)
+
 const (
 	ERROR_LOG_KEY = "ERROR"
 	FATAL_LOG_KEY = "FATAL"
@@ -18,7 +23,9 @@ func (self *LogTag) Name() string {
 }
 
 func (self *LogTag) Prefix() string {
-	return self.prefix
+	content :=
+		fmt.Sprintf("%s [ %s ] - ", self.prefix, time.Now())
+	return content
 }
 
 var logTagMap map[string]LogTag = map[string]LogTag{
