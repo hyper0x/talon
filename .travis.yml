@@ -3,6 +3,8 @@ language: go
 go:
   - 1.6.2
 
+go_import_path: gophergo.org/p/talon
+
 install:
   - go get github.com/PuerkitoBio/goquery
   - go get golang.org/x/net/publicsuffix
