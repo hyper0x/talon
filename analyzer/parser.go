@@ -1,8 +1,9 @@
 package analyzer
 
 import (
-	base "hypermind.cn/talon/base"
 	"net/http"
+
+	base "gophergo.org/p/talon/base"
 )
 
 // 被用于解析HTTP响应的函数类型。

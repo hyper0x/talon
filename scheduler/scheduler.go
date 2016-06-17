@@ -3,16 +3,17 @@ package scheduler
 import (
 	"errors"
 	"fmt"
-	anlz "hypermind.cn/talon/analyzer"
-	base "hypermind.cn/talon/base"
-	dl "hypermind.cn/talon/downloader"
-	ipl "hypermind.cn/talon/itempipeline"
-	"hypermind.cn/talon/logging"
-	mdw "hypermind.cn/talon/middleware"
 	"net/http"
 	"strings"
 	"sync/atomic"
 	"time"
+
+	anlz "gophergo.org/p/talon/analyzer"
+	base "gophergo.org/p/talon/base"
+	dl "gophergo.org/p/talon/downloader"
+	ipl "gophergo.org/p/talon/itempipeline"
+	"gophergo.org/p/talon/logging"
+	mdw "gophergo.org/p/talon/middleware"
 )
 
 // 组件的统一代号。

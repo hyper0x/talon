@@ -1,9 +1,9 @@
-package itemproc // import "hypermind.cn/talon/itempipeline"
+package itemproc // import "gophergo.org/p/talon/itempipeline"
 
 import (
 	"errors"
 	"fmt"
-	base "hypermind.cn/talon/base"
+	base "gophergo.org/p/talon/base"
 	"sync/atomic"
 )
 

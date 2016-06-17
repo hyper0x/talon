@@ -1,7 +1,7 @@
 package itemproc
 
 import (
-	base "hypermind.cn/talon/base"
+	base "gophergo.org/p/talon/base"
 )
 
 // 被用来处理条目的函数类型。

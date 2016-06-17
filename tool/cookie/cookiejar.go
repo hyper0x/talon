@@ -1,4 +1,4 @@
-package cookie // import "hypermind.cn/talon/tool/cookie"
+package cookie // import "gophergo.org/p/talon/tool/cookie"
 
 import (
 	"code.google.com/p/go.net/publicsuffix"

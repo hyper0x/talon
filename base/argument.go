@@ -1,4 +1,4 @@
-package base // import "hypermind.cn/talon/base"
+package base // import "gophergo.org/p/talon/base"
 
 import (
 	"errors"

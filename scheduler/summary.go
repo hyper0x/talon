@@ -3,7 +3,7 @@ package scheduler
 import (
 	"bytes"
 	"fmt"
-	base "hypermind.cn/talon/base"
+	base "gophergo.org/p/talon/base"
 )
 
 // 调度器摘要信息的接口类型。

@@ -1,9 +1,9 @@
-package middleware // import "hypermind.cn/talon/middleware"
+package middleware // import "gophergo.org/p/talon/middleware"
 
 import (
 	"errors"
 	"fmt"
-	base "hypermind.cn/talon/base"
+	base "gophergo.org/p/talon/base"
 	"sync"
 )
 

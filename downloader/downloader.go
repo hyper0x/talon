@@ -1,9 +1,9 @@
-package downloader // import "hypermind.cn/talon/downloader"
+package downloader // import "gophergo.org/p/talon/downloader"
 
 import (
-	base "hypermind.cn/talon/base"
-	"hypermind.cn/talon/logging"
-	mdw "hypermind.cn/talon/middleware"
+	base "gophergo.org/p/talon/base"
+	"gophergo.org/p/talon/logging"
+	mdw "gophergo.org/p/talon/middleware"
 	"net/http"
 )
 

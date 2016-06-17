@@ -3,7 +3,7 @@ package downloader
 import (
 	"errors"
 	"fmt"
-	mdw "hypermind.cn/talon/middleware"
+	mdw "gophergo.org/p/talon/middleware"
 	"reflect"
 )
 

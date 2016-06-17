@@ -122,7 +122,7 @@ func testLogger(t *testing.T, logger Logger) {
 func checkContent(t *testing.T, logTag LogTag, content string, format string, logContents ...interface{}) {
 	var prefixBuffer bytes.Buffer
 	prefixBuffer.WriteString(logTag.Prefix())
-	prefixBuffer.WriteString(" hypermind.cn/talon/logging.testLogger : (logger_test.go:")
+	prefixBuffer.WriteString(" gophergo.org/p/talon/logging.testLogger : (logger_test.go:")
 	prefix := prefixBuffer.String()
 	var suffixBuffer bytes.Buffer
 	suffixBuffer.WriteString(") - ")

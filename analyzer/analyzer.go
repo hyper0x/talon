@@ -1,12 +1,13 @@
-package analyzer // import "hypermind.cn/talon/analyzer"
+package analyzer // import "gophergo.org/p/talon/analyzer"
 
 import (
 	"errors"
 	"fmt"
-	base "hypermind.cn/talon/base"
-	"hypermind.cn/talon/logging"
-	mdw "hypermind.cn/talon/middleware"
 	"net/url"
+
+	base "gophergo.org/p/talon/base"
+	"gophergo.org/p/talon/logging"
+	mdw "gophergo.org/p/talon/middleware"
 )
 
 // 日志记录器。

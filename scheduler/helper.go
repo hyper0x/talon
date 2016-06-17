@@ -3,11 +3,11 @@ package scheduler
 import (
 	"errors"
 	"fmt"
-	anlz "hypermind.cn/talon/analyzer"
-	base "hypermind.cn/talon/base"
-	dl "hypermind.cn/talon/downloader"
-	ipl "hypermind.cn/talon/itempipeline"
-	mdw "hypermind.cn/talon/middleware"
+	anlz "gophergo.org/p/talon/analyzer"
+	base "gophergo.org/p/talon/base"
+	dl "gophergo.org/p/talon/downloader"
+	ipl "gophergo.org/p/talon/itempipeline"
+	mdw "gophergo.org/p/talon/middleware"
 	"regexp"
 	"strings"
 )

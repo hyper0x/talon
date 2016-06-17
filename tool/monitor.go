@@ -1,9 +1,9 @@
-package tool // import "hypermind.cn/talon/tool"
+package tool // import "gophergo.org/p/talon/tool"
 
 import (
 	"errors"
 	"fmt"
-	sched "hypermind.cn/talon/scheduler"
+	sched "gophergo.org/p/talon/scheduler"
 	"runtime"
 	"time"
 )

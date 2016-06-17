@@ -1,4 +1,4 @@
-package logging // import "hypermind.cn/talon/logging"
+package logging // import "gophergo.org/p/talon/logging"
 
 import (
 	"fmt"

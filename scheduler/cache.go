@@ -1,8 +1,8 @@
-package scheduler // import "hypermind.cn/talon/scheduler"
+package scheduler // import "gophergo.org/p/talon/scheduler"
 
 import (
 	"fmt"
-	base "hypermind.cn/talon/base"
+	base "gophergo.org/p/talon/base"
 	"sync"
 )
 
