@@ -1,9 +1,10 @@
 package cookie // import "gophergo.org/p/talon/tool/cookie"
 
 import (
-	"code.google.com/p/go.net/publicsuffix"
 	"net/http"
 	"net/http/cookiejar"
+
+	"golang.org/x/net/publicsuffix"
 )
 
 // 创建 http.CookieJar 类型的值。
@@ -22,5 +23,5 @@ func (psl *myPublicSuffixList) PublicSuffix(domain string) string {
 }
 
 func (psl *myPublicSuffixList) String() string {
-	return "Web crawler - public suffix list (rev 1.0) power by 'code.google.com/p/go.net/publicsuffix'"
+	return "Web crawler - public suffix list (rev 1.0) power by 'github.com/golang/net/publicsuffix'"
 }
