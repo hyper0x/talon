@@ -1,17 +1,15 @@
 language: go
 
 go:
-  - 1.4
+  - 1.6.2
 
 install:
   - go get github.com/PuerkitoBio/goquery
   - go get golang.org/x/net/publicsuffix
 
 before_script:
-  - chmod +x ./test
 
 script:
-  - ./test
 
 notifications:
   slack: gophercn:at1kT18oZQMeLErRW2TjmIZh
